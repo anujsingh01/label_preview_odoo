@@ -1,0 +1,7 @@
+<odoo>
+    <record id="model_custom_barcode_template" model="ir.model">
+        <field name="name">Custom Barcode Template</field>
+        <field name="model">custom.barcode.template</field>
+        <field name="state">manual</field>
+    </record>
+</odoo>

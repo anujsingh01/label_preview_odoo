@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="paperformat_label_a4_blank" model="report.paperformat">
+        <field name="name">Label A4</field>
+        <field name="format">A4</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">10</field>
+        <field name="margin_bottom">10</field>
+        <field name="margin_left">5</field>
+        <field name="margin_right">5</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="disable_shrinking" eval="True"/>
+        <field name="dpi">96</field>
+        <field name="default" eval="False"/>
+    </record>
+
+    <record id="paperformat_label_50x38" model="report.paperformat">
+        <field name="name">Label 50x38 mm</field>
+        <field name="format">custom</field>
+        <field name="page_height">38</field>
+        <field name="page_width">50</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">1</field>
+        <field name="margin_bottom">0</field>
+        <field name="margin_left">0</field>
+        <field name="margin_right">0</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="disable_shrinking" eval="True"/>
+        <field name="dpi">96</field>
+        <field name="default" eval="False"/>
+    </record>
+
+
+<!-- rrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+
+    <!-- Paper Formats -->
+    <record id="paperformat_label_25x66" model="report.paperformat">
+        <field name="name">Label 25x66mm</field>
+        <field name="format">custom</field>
+        <field name="page_height">25</field>
+        <field name="page_width">66</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">1</field>
+        <field name="margin_bottom">0</field>
+        <field name="margin_left">0</field>
+        <field name="margin_right">0</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="disable_shrinking" eval="True"/>
+        <field name="dpi">96</field>
+        <field name="default" eval="False"/>
+    </record>
+    
+
+    <record id="paperformat_label_38x25" model="report.paperformat">
+        <field name="name">Label 38x25mm</field>
+        <field name="format">custom</field>
+        <field name="page_height">25</field>  <!-- Height in mm -->
+        <field name="page_width">38</field>  <!-- Width in mm -->
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">1</field>
+        <field name="margin_bottom">0</field>
+        <field name="margin_left">0</field>
+        <field name="margin_right">0</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="disable_shrinking" eval="True"/>
+        <field name="dpi">96</field>
+        <field name="default" eval="False"/>
+    </record>
+
+    <record id="paperformat_label_50x25" model="report.paperformat">
+        <field name="name">Label 50x25mm</field>
+        <field name="format">custom</field>
+        <field name="page_height">25</field>
+        <field name="page_width">50</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">1</field>
+        <field name="margin_bottom">0</field>
+        <field name="margin_left">0</field>
+        <field name="margin_right">0</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="disable_shrinking" eval="True"/>
+        <field name="dpi">96</field>
+        <field name="default" eval="False"/>
+    </record>
+
+    <record id="paperformat_label_101x152" model="report.paperformat">
+        <field name="name">Label 101x152mm</field>
+        <field name="format">custom</field>
+        <field name="page_height">152</field>
+        <field name="page_width">101</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">1</field>
+        <field name="margin_bottom">0</field>
+        <field name="margin_left">0</field>
+        <field name="margin_right">0</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="disable_shrinking" eval="True"/>
+        <field name="dpi">96</field>
+        <field name="default" eval="False"/>
+    </record>
+
+    <record id="paperformat_label_101x50" model="report.paperformat">
+        <field name="name">Label 101x50mm</field>
+        <field name="format">custom</field>
+        <field name="page_height">50</field>
+        <field name="page_width">101</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">2</field>
+        <field name="margin_bottom">2</field>
+        <field name="margin_left">2</field>
+        <field name="margin_right">2</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="disable_shrinking" eval="True"/>
+        <field name="dpi">96</field>
+        <field name="default" eval="False"/>
+    </record>
+
+
+    <record id="paperformat_label_101x76" model="report.paperformat">
+        <field name="name">Label 101x76mm</field>
+        <field name="format">custom</field>
+        <field name="page_height">76</field>
+        <field name="page_width">101</field>
+        <field name="orientation">Portrait</field> <!-- Try Landscape if cutting off -->
+        <field name="margin_top">1</field>
+        <field name="margin_bottom">1</field>
+        <field name="margin_left">1</field>
+        <field name="margin_right">1</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="disable_shrinking" eval="True"/>
+        <field name="dpi">300</field>  <!-- Higher DPI for accurate scaling -->
+        <field name="default" eval="False"/>
+    </record>
+
+
+
+    <record id="action_report_product_label_25x66" model="ir.actions.report">
+        <field name="name">Product Labels 25.4x66.7mm (Common for small product barcodes) </field>
+        <field name="model">print.product.label.line</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="paperformat_id" ref="paperformat_label_25x66"/>
+        <field name="report_name">label_preview.report_product_label_25x66_template</field>
+        <field name="report_file">label_preview.report_product_label_25x66_template</field>
+        <field name="print_report_name">'Product Labels 25.4x66.7mm'</field>
+        <field name="is_custom_template">True</field>
+    </record>
+    
+
+    <record id="action_report_product_label_38x25" model="ir.actions.report">
+        <field name="name">Product Labels 38x25mm (Suitable for jewelry tags and small items) </field>
+        <field name="model">print.product.label.line</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="paperformat_id" ref="paperformat_label_38x25"/>
+        <field name="report_name">label_preview.report_product_label_38x25_template</field>
+        <field name="report_file">label_preview.report_product_label_38x25_template</field>
+        <field name="print_report_name">'Product Labels 38x25mm'</field>
+        <field name="is_custom_template">True</field>
+    </record>
+
+    <record id="action_report_product_label_50x25" model="ir.actions.report">
+        <field name="name">Product Labels 50.8x25.4mm (Standard for product labeling) </field>
+        <field name="model">print.product.label.line</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="paperformat_id" ref="paperformat_label_38x25"/>
+        <field name="report_name">label_preview.report_product_label_50x25_template</field>
+        <field name="report_file">label_preview.report_product_label_50x25_template</field>
+        <field name="print_report_name">'Product Labels 50x25mm'</field>
+        <field name="is_custom_template">True</field>
+    </record>
+
+    <record id="action_report_product_label_101x152" model="ir.actions.report">
+        <field name="name">Product Labels 101.6x152.4mm (Standard for shipping labels (FedEx, UPS, Amazon))</field>
+        <field name="model">print.product.label.line</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="paperformat_id" ref="paperformat_label_101x152"/>
+        <field name="report_name">label_preview.report_product_label_101x152_template</field>
+        <field name="report_file">label_preview.report_product_label_101x152_template</field>
+        <field name="print_report_name">'Product Labels 101x152mm'</field>
+        <field name="is_custom_template">True</field>
+    </record>
+
+
+    <record id="action_report_product_label_101x50" model="ir.actions.report">
+        <field name="name">Product Labels 101.6mm x 50.8mm (Common for small package tracking)</field>
+        <field name="model">print.product.label.line</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="paperformat_id" ref="paperformat_label_101x50"/>
+        <field name="report_name">label_preview.report_product_label_101x50_template</field>
+        <field name="report_file">label_preview.report_product_label_101x50_template</field>
+        <field name="print_report_name">'Product Labels 101x50mm'</field>
+        <field name="is_custom_template">True</field>
+    </record>
+
+    <record id="action_report_product_label_101x76" model="ir.actions.report">
+        <field name="name">Product Labels 101.6mm x 76.2mm (Used in warehouse labeling)</field>
+        <field name="model">print.product.label.line</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="paperformat_id" ref="paperformat_label_101x76"/>
+        <field name="report_name">label_preview.report_product_label_101x76_template</field>
+        <field name="report_file">label_preview.report_product_label_101x76_template</field>
+        <field name="print_report_name">'Product Labels 101x76mm'</field>
+        <field name="is_custom_template">True</field>
+    </record>
+
+    <!-- rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+
+
+
+
+    <record id="action_report_product_label_A4_57x35" model="ir.actions.report">
+        <field name="name">Product Labels 57x35mm (A4, 21 pcs)</field>
+        <field name="model">print.product.label.line</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="paperformat_id" ref="paperformat_label_a4_blank"/>
+        <field name="report_name">label_preview.report_product_label_57x35_template</field>
+        <field name="report_file">label_preview.report_product_label_57x35_template</field>
+        <field name="print_report_name">'Product Labels 57x35mm'</field>
+        <field name="is_custom_template">False</field>
+    </record>
+
+    <record id="action_report_product_label_50x38" model="ir.actions.report">
+        <field name="name">Product Labels 50x38mm</field>
+        <field name="model">print.product.label.line</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="paperformat_id" ref="paperformat_label_50x38"/>
+        <field name="report_name">label_preview.report_product_label_50x38_template</field>
+        <field name="report_file">label_preview.report_product_label_50x38_template</field>
+        <field name="print_report_name">'Product Labels 50x38mm'</field>
+        <field name="is_custom_template">False</field>
+    </record>
+
+    <record id="action_report_product_label_from_template" model="ir.actions.report">
+        <field name="name">Product Label from your own template</field>
+        <field name="model">print.product.label.line</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="paperformat_id" ref="label_preview.paperformat_label_a4_blank"/>
+        <field name="report_name">label_preview.report_product_label_from_template</field>
+        <field name="report_file">label_preview.report_product_label_from_template</field>
+        <field name="print_report_name">'Product Labels Custom Design'</field>
+        <field name="is_custom_template">False</field>
+    </record>
+
+
+</odoo>

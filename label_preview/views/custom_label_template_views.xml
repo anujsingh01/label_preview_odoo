@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+        <record id="view_custom_label_template_form_popup" model="ir.ui.view">
+            <field name="name">custom.label.template.form.popup</field>
+            <field name="model">custom.label.template</field>
+            <field name="arch" type="xml">
+                <form string="Update Custom Label Template">
+                    <sheet>
+                        <div class="row">
+                            <div class="col-6">
+                                <group>
+                                    <field name="name"/>
+                                    <field name="model"/>
+                                    <field name="html_code" widget="textarea" placeholder="Enter template code here"/>
+                                </group>
+                                <group string="Label Dimensions">
+                                    <field name="width"/>
+                                    <field name="height"/>
+                                    <field name="border_width"/>
+                                </group>
+                            </div>
+                            <div class="col-6">
+                                <group string="Specifications">
+                                    <field name="paper_format"/>
+                                    <field name="orientation"/>
+                                    <field name="margin_top"/>
+                                    <field name="margin_bottom"/>
+                                    <field name="margin_left"/>
+                                    <field name="margin_right"/>
+                                </group>
+                            </div>
+                            
+                        </div>
+                    </sheet>
+                    <footer>
+                        <button string="Save Template" type="object" class="btn-primary" name="action_add_template"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

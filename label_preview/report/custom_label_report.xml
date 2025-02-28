@@ -1,0 +1,21 @@
+<odoo>
+    <record id="action_report_custom_product_label" model="ir.actions.report">
+        <field name="name">Custom Product Label</field>
+        <field name="model">print.product.label.wizard</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">label_preview.report_custom_label_template</field>
+    </record>
+
+    <template id="report_custom_label_template">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="doc">
+                    <div t-raw="doc.custom_template_id.html_code"/>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
+
+
+<!-- added by ravi -->
