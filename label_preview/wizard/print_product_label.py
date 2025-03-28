@@ -207,7 +207,7 @@ class PrintProductLabel(models.TransientModel):
         
         # Check if the result is a tuple
         if isinstance(html_data, tuple):
-            # Extract the first element of the tuple (actual HTML content)
+         
             html_data = html_data[0]
         
         # Decode bytes to string if necessary
@@ -244,7 +244,7 @@ class PrintProductLabel(models.TransientModel):
     #     }
     def action_add_template(self):
         print('----------in main function')
-        import pdb;pdb.set_trace()
+        # import pdb;pdb.set_trace()
         return {
             'type': 'ir.actions.act_window',
             'name': 'Add Custom Label Template',

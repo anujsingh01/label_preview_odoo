@@ -40,7 +40,7 @@ class CustomLabelTemplate(models.Model):
     
     
     def action_add_template(self):
-        import pdb;pdb.set_trace()
+        # import pdb;pdb.set_trace()
         vals = {
             'name': self.name,  # Example field update
             'width': self.width,

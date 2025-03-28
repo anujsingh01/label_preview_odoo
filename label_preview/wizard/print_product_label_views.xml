@@ -21,13 +21,13 @@
                             icon="fa-search"
                             class="border btn-light mr8"/>
 
-                    <button name="action_show_preview"
+                    <!-- <button name="action_show_preview"
                                 string="Show Preview"
                                 context="{'print_mode': 'html', 'stay_in_form': True}"
                                 help="Preview product labels"
                                 type="object"
                                 class="border btn-light mr8"
-                                target="self"/>
+                                target="self"/> -->
 
                     <button name="action_add_template" type="object" string="Add Template" class="btn-primary"/>
 
